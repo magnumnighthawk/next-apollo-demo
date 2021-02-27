@@ -1,12 +1,15 @@
-import Link from "next/link";
+import ReactMarkdown from "react-markdown";
+import ProfileCard from "../components/ProfileCard";
+import Readme from "../lib/readme";
+import { AboutPageWrapper, Changelog } from "../styles";
 
-export default () => (
-  <div>
-    About Page
-    <br />
-    <br />
-    <Link href="/">
-      <a>Go Back</a>
-    </Link>
-  </div>
+const About = () => (
+  <AboutPageWrapper>
+    <ProfileCard />
+    <Changelog>
+      <ReactMarkdown>{Readme}</ReactMarkdown>
+    </Changelog>
+  </AboutPageWrapper>
 );
+
+export default About;
