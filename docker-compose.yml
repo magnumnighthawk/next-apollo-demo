@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  nodejs-server:
+    build:
+      context: ./server
+    ports:
+      - "5000:5000"
+    container_name: graph-api
+    volumes:
+      - ./server:/usr/src/app/server
+      - /usr/src/app/server/node_modules
+  nextjs-ui:
+    build:
+      context: ./client
+    ports:
+      - "3000:3000"
+    container_name: nextjs-ui
+    stdin_open: true
+    volumes:
+      - ./client:/usr/src/app/client
+      - /usr/src/app/client/node_modules

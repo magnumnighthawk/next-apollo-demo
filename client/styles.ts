@@ -160,7 +160,7 @@ export const Button = styled.button<ButtonProps>`
 
   &:focus {
     outline: none;
-    border-color: white;
+    border-color: ${({ small }) => (small ? "black" : "white")};
   }
 `;
 
