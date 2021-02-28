@@ -128,7 +128,7 @@ export const Email = styled.p`
 `;
 
 export const SubSection = styled.div`
-  padding: 15px;
+  padding: 15px 15px 5px;
   background-color: #f5f7ff;
   margin-top: 10px;
   border-radius: 15px;
