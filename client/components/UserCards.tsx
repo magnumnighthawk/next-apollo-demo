@@ -23,7 +23,7 @@ export default function UserCards(props: any) {
   return (
     <>
       {pagedUsers.map((user: User) => (
-        <UserCardWrapper key={user.email}>
+        <UserCardWrapper key={user.email} className="user-card-item">
           <DisplayPicture src={user.avatar} />
           <DisplayName>{user.name}</DisplayName>
           <Email>{user.email}</Email>

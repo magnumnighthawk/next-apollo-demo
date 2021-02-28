@@ -13,9 +13,12 @@ export default function ProfileCard() {
       <ProfilePicture src="/profile.jpg" />
       <HeroCardTitle>Karthick Ramakrishnan</HeroCardTitle>
       <ProfileDescription>
-        Senior frontend developer at TCS. Proficient in Web development. ReactJS
-        enthusiast. Have worked on NextJS, Node.js, Typescript, GraphQL, Webpack
-        etc.
+        ReactJS enthusiast. Have worked on NextJS, Node.js, Typescript, GraphQL,
+        Webpack etc.
+      </ProfileDescription>
+      <ProfileDescription>
+        Like to explore the latest JS frameworks and libraries. Know a bit of
+        full-stack and cloud too
       </ProfileDescription>
 
       <Link href="/">

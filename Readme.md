@@ -31,6 +31,23 @@
 - Add enviroment config support (URLs are hardcoded currently)
 
 
+## How to run
+
+Install Docker and run the following
+
+```
+docker-compose up
+```
+
+Alternatively, you can run `npm install` on both client and server folders and
+```
+#Run this on the client
+npm run dev
+
+#Run this to start the server
+npm start
+```
+
 ### Credits
 
 [arunoda's original version](https://github.com/arunoda/next-apollo-demo)
