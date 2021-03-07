@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle, keyframes } from "styled-components";
-import { SpinnerProps, ButtonProps } from "./interfaces";
+import { SpinnerProps, ButtonProps } from "interfaces";
 
 export default createGlobalStyle`
   body, html {
@@ -16,7 +16,7 @@ export default createGlobalStyle`
 
   a {
     font-weight: bold;
-    color: #298ab3;
+    color: #086288;
 
     &:hover {
       color: #54ccff;
@@ -97,7 +97,7 @@ export const HeroCardWrapper = styled(UserCardWrapper)`
   color: #fff;
 `;
 
-export const HeroCardTitle = styled.p`
+export const HeroCardTitle = styled.h1`
   font-weight: bold;
   font-size: 28px;
   margin: 0 0 10px;
@@ -109,13 +109,17 @@ export const HeroCardDescription = styled(HeroCardTitle)`
 `;
 
 export const DisplayPicture = styled.img`
-  height: 80px;
-  width: 80px;
   border-radius: 50%;
   margin: 10px;
   box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px,
     rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+  object-fit: cover;
 `;
+
+DisplayPicture.defaultProps = {
+  height: "80px",
+  width: "80px",
+};
 
 export const DisplayName = styled.p`
   font-weight: bold;

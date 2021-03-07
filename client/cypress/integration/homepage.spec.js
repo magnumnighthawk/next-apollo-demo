@@ -1,7 +1,7 @@
 describe("Homepage", () => {
   it("loads the Hero card", () => {
     cy.visit("/");
-    cy.contains("p", "Welcome!");
+    cy.contains("h1", "Welcome!");
     cy.contains("button", "About");
   });
 

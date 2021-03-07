@@ -4,7 +4,7 @@ import {
   HeroCardTitle,
   HeroCardDescription,
   Button,
-} from "../styles";
+} from "styles";
 
 export default function HeroCard() {
   return (

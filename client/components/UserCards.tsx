@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { User, UserAddress } from "../interfaces";
+import { User, UserAddress } from "interfaces";
 import {
   UserCardWrapper,
   DisplayName,
@@ -7,7 +7,7 @@ import {
   Email,
   SubSection,
   DetailsItem,
-} from "../styles";
+} from "styles";
 
 function formUserAddress(address: UserAddress) {
   return Object.values(address)
@@ -24,7 +24,7 @@ export default function UserCards(props: any) {
     <>
       {pagedUsers.map((user: User) => (
         <UserCardWrapper key={user.email} className="user-card-item">
-          <DisplayPicture src={user.avatar} />
+          <DisplayPicture src={user.avatar} alt={`${user.name}'s avatar`} />
           <DisplayName>{user.name}</DisplayName>
           <Email>{user.email}</Email>
           <SubSection>

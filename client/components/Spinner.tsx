@@ -1,5 +1,5 @@
-import { RippleSpin, AppSpinnerWrap } from "../styles";
-import { SpinnerProps } from "../interfaces";
+import { RippleSpin, AppSpinnerWrap } from "styles";
+import { SpinnerProps } from "interfaces";
 
 export default function Spinner(props: SpinnerProps) {
   return (

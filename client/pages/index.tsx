@@ -1,10 +1,10 @@
-import React, { Suspense, useEffect, useRef } from "react";
+import React, { Suspense } from "react";
 import { useQuery } from "@apollo/client";
-import Spinner from "../components/Spinner";
-const HeroCard = React.lazy(() => import("../components/HeroCard"));
-const UserCards = React.lazy(() => import("../components/UserCards"));
-import { ListWrapper, Button, LoadMoreWrapper } from "../styles";
-import { ALL_USERS_QUERY } from "../lib/queries";
+import Spinner from "components/Spinner";
+const HeroCard = React.lazy(() => import("components/HeroCard"));
+const UserCards = React.lazy(() => import("components/UserCards"));
+import { ListWrapper, Button, LoadMoreWrapper } from "styles";
+import { ALL_USERS_QUERY } from "lib/queries";
 
 export default function Page() {
   const { loading, error, data, refetch } = useQuery(ALL_USERS_QUERY, {

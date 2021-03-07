@@ -1,7 +1,7 @@
-describe("Homepage", () => {
+describe("About", () => {
   it("loads the Profile card", () => {
     cy.visit("/about");
-    cy.contains("p", "Karthick Ramakrishnan");
+    cy.contains("h1", "Karthick Ramakrishnan");
     cy.contains("button", "Go back");
   });
 

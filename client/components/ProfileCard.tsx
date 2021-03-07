@@ -5,7 +5,7 @@ import {
   ProfileDescription,
   ProfilePicture,
   Button,
-} from "../styles";
+} from "styles";
 
 export default function ProfileCard() {
   return (

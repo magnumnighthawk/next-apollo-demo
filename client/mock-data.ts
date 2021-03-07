@@ -1,4 +1,4 @@
-import { ALL_USERS_QUERY } from "./lib/queries";
+import { ALL_USERS_QUERY } from "lib/queries";
 
 export const apolloGetUsers: any[] = [
   {
