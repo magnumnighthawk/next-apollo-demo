@@ -2,6 +2,8 @@
 
 ### Next.js App running React 17 and Apollo GraphQL. This repository has been forked from arunoda's [next-apollo-demo](https://github.com/arunoda/next-apollo-demo)
 
+View [Demo](https://mysterious-basin-33454.herokuapp.com/)
+
 
 ## The following changes have been made after:
 
