@@ -1,57 +1,81 @@
-# Next.js GraphQL demo app
+# Hacker News
 
-### Next.js App running React 17 and Apollo GraphQL. This repository has been forked from arunoda's [next-apollo-demo](https://github.com/arunoda/next-apollo-demo)
+This project is a modern, feature-rich clone of Hacker News, built with Next.js, React, and Apollo GraphQL. It showcases the power of a well-structured, type-safe frontend application consuming data from a GraphQL API.
 
-View [Demo](https://mysterious-basin-33454.herokuapp.com/)
+[View Demo](https://mysterious-basin-33454.herokuapp.com/)
 
+## What You Can Do
 
-## The following changes have been made after:
+This application allows you to:
 
-- Updated libraries - React, Next, Apollo Client ,etc.
-- Added support for Typescript
-- Added Docker support
-- Added Nodemon for the server
-- Added React-helmet for document titles
-- Added tests - Unit tests and E2e
+*   **Browse Top Stories:** View the latest and greatest stories from a Hacker News-like feed.
+*   **View Story Details:** Dive deeper into individual stories, exploring their content and related information.
+* **Navigate pages:**  Go through pages of stories.
+*   **Enjoy a Smooth Experience:** Benefit from fast loading times, lazy loading of components, and a responsive design.
+*   **See it running on Docker:** easily deploy and run the project locally with Docker.
 
+## Key Features
 
-## The following good practices have been obeyed
+*   **Modern Tech Stack:** Built with Next.js, React 17+, and Apollo Client for a powerful and efficient user experience.
+*   **GraphQL API:** Fetches data from a GraphQL server, demonstrating best practices in data fetching and management.
+*   **TypeScript:**  Leverages the benefits of static typing for robust, maintainable code.
+*   **Lazy Loading:** Components load on demand using React Suspense, improving initial load times.
+*   **Responsive Design:** Adapts gracefully to various screen sizes, providing a consistent experience across devices.
+*   **Docker Support:** Easily deployable and runnable via Docker, simplifying setup and development.
+* **Document Titles:** Dynamic document titles using React-helmet.
+* **Comprehensive Testing:** Well-tested with both unit and end-to-end tests.
 
-- [x] Good test coverage
-- [x] Strongly typed with Typescript
-- [x] Lazy loading of components with Suspense
-- [x] Pretty code
-- [x] Conventional commits
-- [x] Accessible and good design
+## Under the Hood
 
+This project also highlights:
 
-## Few things I would like to add in the future:
+*   **Clean Code:**  Adheres to code style conventions and best practices.
+*   **Conventional Commits:**  Uses a clear commit message structure for easy tracking of changes.
+*   **Accessible Design:** Aims for web accessibility best practices to ensure inclusivity.
 
-- Infinite load on scroll-end.
-- Progressive load of images
-- Move language texts to React-intl
-- Add enviroment config support (URLs are hardcoded currently)
+## Getting Started
 
+### Using Docker (Recommended)
 
-## How to run
+1.  Ensure Docker is installed on your system.
+2.  Run:
 
-Install Docker and run the following
+    ```bash
+    docker-compose up
+    ```
 
-```
-docker-compose up
-```
+### Manual Setup
 
-Alternatively, you can run `npm install` on both client and server folders and
-```
-#Run this on the client
-npm run dev
+1.  Navigate to both the `client` and `server` directories in your terminal.
+2.  In each directory, run:
 
-#Run this to start the server
-npm start
-```
+    ```bash
+    npm install
+    ```
 
-### Credits
+3. Start the client:
 
-[arunoda's original version](https://github.com/arunoda/next-apollo-demo)
+    ```bash
+    # In the client directory
+    npm run dev
+    ```
 
-Ripple loader by [Loading.io ](https://loading.io/css/)
+4. Start the server:
+
+    ```bash
+    # In the server directory
+    npm start
+    ```
+
+## Future Improvements
+
+*   **Infinite Scrolling:** Implement infinite scrolling to seamlessly load more stories as the user scrolls.
+*   **Image Optimization:** Progressive image loading for improved perceived performance.
+*   **Internationalization:**  Utilize `react-intl` for multi-language support.
+*   **Environment Configuration:** Migrate hardcoded URLs to environment variables for better flexibility.
+
+## Credits
+
+This project is inspired by [arunoda's original Next.js & Apollo demo](https://github.com/arunoda/next-apollo-demo).
+
+The ripple loader used during loading is powered by [Loading.io](https://loading.io/css/).
